@@ -1,0 +1,136 @@
+/* Headers */
+
+h1{
+   display:inline;
+   }
+
+h2 {
+
+   }
+
+#page-header {
+   border-bottom:1px solid #CCCCCC;
+   }
+
+#nav-search {
+   text-align:right;
+   position:static;
+   right:0;
+   top:0;
+   width:auto;
+   }
+
+.nav-menu {
+   margin-left: 128px;
+   }
+
+.search-thingy{
+   float:right;
+   margin-top:10px;
+   }
+
+#logo {
+   text-align:left;
+   padding-right:0;
+   vertical-align:baseline;
+   position:static;
+   margin: 0 0 0 0;
+   padding: 0;
+   }
+
+h2.entry-title {
+   border-bottom:1px solid #DDDDDD;
+   margin-top:24px;
+   margin-bottom:6px;
+   }
+
+ /* Content */
+#page {
+   max-width:900px;
+   margin:5px auto;
+   }
+
+#main {
+   max-width: 800px;
+   margin: auto;
+}
+
+#colophon {
+   border-top:1px solid #CCCCCC;
+   text-align:center;
+}
+
+input.search-box {
+   background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    color: #111111;
+    font-family: 'Lucida Sans','Trebuchet MS','Lucida Grande','Bitstream Sans Vera',Verdana,Arial,Tahoma,Helvetica,Sans-Serif;
+    font-size: 80%;
+    margin-right:2px;
+    margin-left:auto;
+    margin-bottom: 2px;
+    padding: 2px;
+    width:100px;
+    
+}
+
+#photoframe {
+   /*width:800px;*/
+   text-align:center;
+   margin-top:24px;
+   margin-bottom:32px;
+   margin-left:-80px;
+   margin-right:-80px;
+   }
+
+#search_form {
+   display:inline;
+   width:110px;
+   /*margin-left:auto;
+   margin-right:0;*/
+   /*float:right;*/
+   text-align:right;
+   }
+
+#comments {
+   border-top:1px solid #cccccc;
+   margin-top: 16px;
+   }
+
+#aside-title {
+   border-bottom:1px solid #DDDDDD;
+   }
+
+#aside-line {
+   size:1px;
+   width:200px;
+   noshade:noshade;
+   }
+
+.entry-content {
+   width:640px;
+   margin-left:80px;
+   margin-right:auto;
+   }
+
+.entry-meta {
+   /*margin-left:80px;
+   margin-right:80px;*/
+   margin-top:0px;
+   }
+.entry-meta-right{
+   float:right;
+   }
+
+hr.aside-line{
+   background-color:inherit;
+   border-width:0;
+   height:0px;
+
+   text-align:center;
+   }
+
+hr.aside-line:after{
+   content:"____________________________________________";
+   color:#cccccc;
+   }

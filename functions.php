@@ -135,17 +135,17 @@ function toolbox_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'toolbox' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'toolbox' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Previous post link', 'toolbox' ) . '</span> ' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Next post link', 'toolbox' ) . '</span> %title' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'toolbox' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( 'Older posts <span class="meta-nav">&rarr;</span>', 'toolbox' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'toolbox' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( '<span class="meta-nav">&larr;</span> Newer posts', 'toolbox' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -183,7 +183,7 @@ function toolbox_comment( $comment, $args, $depth ) {
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
 			<footer>
 				<div class="comment-author vcard">
-					<?php echo get_avatar( $comment, 40 ); ?>
+					<!--?php echo get_avatar( $comment, 40 ); ? -->
 					<?php printf( __( '%s <span class="says">says:</span>', 'toolbox' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
@@ -223,14 +223,11 @@ if ( ! function_exists( 'toolbox_posted_on' ) ) :
  * @since Toolbox 1.2
  */
 function toolbox_posted_on() {
-	printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'toolbox' ),
+	printf( __( '<span class="sep"><i class="fa fa-calendar"></i> </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> ', 'toolbox' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'toolbox' ), get_the_author() ) ),
-		esc_html( get_the_author() )
+		esc_html( get_the_date() )
 	);
 }
 endif;
