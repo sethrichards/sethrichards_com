@@ -42,6 +42,8 @@ h2.entry-title {
    border-bottom:1px solid #DDDDDD;
    margin-top:24px;
    margin-bottom:6px;
+	margin-left: 80px;
+	margin-right: 80px;
    }
 
  /* Content */
@@ -114,8 +116,8 @@ input.search-box {
    }
 
 .entry-meta {
-   /*margin-left:80px;
-   margin-right:80px;*/
+   margin-left:80px;
+   margin-right:80px;
    margin-top:0px;
    }
 .entry-meta-right{
