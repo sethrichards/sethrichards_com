@@ -12,6 +12,7 @@
 		<div class="entry-meta">
 			<?php toolbox_posted_on(); ?>
          <span class="entry-meta-right">
+	<!--
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
@@ -34,7 +35,7 @@
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
-
+	-->
 		<?php if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
          <span class="sep">   </span>
 	    <i class="fa fa-comments"></i>
