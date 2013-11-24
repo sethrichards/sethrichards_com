@@ -11,7 +11,9 @@ a:hover, a:active {
 }
 
 a.ext_link:before {
-    content:"";
+    content:" ";
+	 font-family: FontAwesome;
+	 color: #808080;
 }
 
 /* Headers */
