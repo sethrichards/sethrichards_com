@@ -141,6 +141,10 @@ input, textarea, select, option{
     text-decoration:none;
 }
 
+#nav-above a:link, #nav-above a:visited {
+    text-decoration:none;
+}
+
 #colophon a:link, #colophon a:visited {
     text-decoration:none;
 }
