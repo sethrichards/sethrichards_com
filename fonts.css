@@ -7,7 +7,7 @@ a:link, a:visited {
 a:hover, a:active {
     border: medium none;
     color: #666666;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 a.ext_link:before {
@@ -43,6 +43,10 @@ h2 a:link, h2 a:visited {
    text-decoration:none;
    font-weight:700;
    }
+
+h3 a:link, h3 a:visited {
+    text-decoration:none;
+}
 
 #access {
 	font-family:  'Montserrat';

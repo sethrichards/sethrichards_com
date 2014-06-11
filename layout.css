@@ -97,6 +97,8 @@ input.search-box {
 #comments {
    border-top:1px solid #cccccc;
    margin-top: 16px;
+   margin-left: 80px;
+   width: 640px;
    }
 
 #aside-title {
