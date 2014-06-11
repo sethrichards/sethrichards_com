@@ -12,7 +12,7 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
-      Copyright &copy <a href="<?php bloginfo( 'url' ); ?>" title="Seth Richards">Seth Richards</a> 2004-2013
+      Copyright &copy <a href="<?php bloginfo( 'url' ); ?>" title="Seth Richards">Seth Richards</a> 2004-2014
    		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
