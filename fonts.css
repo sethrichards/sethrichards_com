@@ -2,7 +2,7 @@
 a:link, a:visited {
     color: #660000;
     font-weight: normal;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 a:hover, a:active {
     border: medium none;
@@ -117,6 +117,10 @@ body {
    font-size:90%;
    }
 
+.entry-meta a:link, .entry-meta a:visited {
+    text-decoration:none;
+}
+
 .aside-separator{
    color:#CCCCCC;
    text-align:center;
@@ -132,3 +136,11 @@ input, textarea, select, option{
     margin: 2px;
     padding: 2px;
    }
+
+#nav-below a:link, #nav-below a:visited {
+    text-decoration:none;
+}
+
+#colophon a:link, #colophon a:visited {
+    text-decoration:none;
+}
